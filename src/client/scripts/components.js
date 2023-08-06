@@ -1,0 +1,16 @@
+export const shareScreen = document.querySelector('#shareScreen');
+export const randomButton = document.querySelector('#randomButton');
+export const userGrid = document.querySelector('#user-grid');
+export const playerCards = userGrid.childNodes;
+export const playButton = document.querySelector('#playButton');
+export const grid = document.querySelector('#grid');
+export const tiles = grid.childNodes;
+export const body = document.querySelector('body');
+export const endScreen = document.querySelector('#endScreen');
+export const usernameOkButton = document.querySelector('#usernameOkButton');
+export const usernameInput = document.querySelector('#usernameInput');
+export const promptScreen = document.querySelector('#promptScreen');
+export const shareCode = document.querySelector('#shareCode');
+export const shareButton = document.querySelector('#shareLink');
+export const shareCloseButton = document.querySelector('#shareCloseButton');
+export const winnerText = endScreen.querySelector('#winnerText');

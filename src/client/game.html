@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/game.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Manjunath Bhat K" />
+        <meta name="description" content="Bingo is a multiplayer game where players try to strike five rows, columns, or diagonals. Each player starts with a 5x5 grid of tiles, and each tile is numbered from 1 to 25." />
+        <title>Bingo game | Online Multiplayer</title>
+    </head>
+    <body>
+        <div id="user-space">
+            <div id="user-grid"></div>
+        </div>
+        <div id="grid-space">
+            <div id="grid"></div>
+            <p id="tileInfo">Click the tiles</p>
+            <div id="playButton" style="display: none;">Play</div>
+            <div id="randomButton" style="display: none">Random fill</div>
+        </div>
+        <div id="promptScreen" style="display: none;">
+            <p>Username:</p>
+            <input id="usernameInput" placeholder="minimum 5 letters">
+            <div id="usernameOkButton">Ok</div>
+        </div>
+        </div>
+        <div id="endScreen" style="display: none;">
+            <p>Bingo</p>
+            <p id="winnerText"></p>
+            <p>Won</p>
+            <a href="" id="playAgainButton">Play Again</a>
+        </div>
+        <div id="shareScreen" style="display: none;">
+            <p id="shareCode"></p>
+            <p id="shareLink">Copy link</p>
+            <p id="shareCloseButton">close</p>
+        </div>
+    </body>
+    <script src="game-minified.js" type="module" defer></script>
+</html>

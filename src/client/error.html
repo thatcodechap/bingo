@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorry</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    </head>
+    <body>
+        <p></p>
+        <p>:(</p>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+            body{
+                font-family: 'Press Start 2P';
+                background-color: #0c1225;
+                color: white;
+                font-size: 0.75rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                height: 100vh;
+                padding: 0px;
+            }
+        </style>
+        <script>
+            let message = (new URLSearchParams(window.location.search)).get('message');
+            document.querySelector('p').innerText = message;
+        </script>
+    </body>
+</html>

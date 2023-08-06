@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+input:focus {
+    outline: none;
+}
+body {
+    font-family: 'Press Start 2P';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c1225;
+    height: 100vh;
+    transition: background-color 1s ease-in;
+}
+#grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    width: 50px;
+    height: 50px;
+    background-color: #6bebd0;
+    user-select: none;
+    border-radius: 3px;
+}
+.tile:hover{
+    cursor: pointer;
+}
+.chosen{
+    background-color: #397e7b;
+}
+#playButton, #randomButton{
+    color: #397e7b;
+    display: inline-block;
+    border: 1px solid #397e7b;
+    border-radius: 5px;;
+    padding: 20px;
+    margin-top: 50px;
+}
+#grid-space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 65vh;
+}
+#user-space {
+    flex: 0 0 35vh;
+    display: flex;
+    align-items: center;
+}
+#user-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.playerCard {
+    height: 50px;
+    color: #397e7b;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 25px;
+    padding-block: 15px;
+    font-size: 0.6rem;
+    border: #397e7b solid 1px;
+    border-radius: 50px;
+}
+.status-dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(243, 113, 0);
+    border-radius: 20px;
+}
+.greenBg {
+    background-color: #00ca32;
+}
+.status-message {
+    display: inline-block;
+}
+.playerName {
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+}
+.row-strike, .column-strike{
+    position: absolute;
+    background-color: #0c1225;
+}
+.row-strike {
+    transform-origin: left;
+    height: 5px;
+}
+.column-strike{
+    width: 5px;
+}
+.diagonal-strike {
+    background-color: #0c1225;
+    width: 5px;
+}
+#endScreen, #shareScreen, #promptScreen{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#promptScreen{
+    display: flex;
+    gap: 15px;
+}
+#promptScreen input {
+    width: 250px;
+    font-family: inherit;
+    background-color: inherit;
+    color: white;
+    border: 1px solid #6bebd0;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+#promptScreen input::placeholder{
+    font-size: 0.60rem;
+}
+#shareLink, #shareCloseButton, #playAgainButton, #usernameOkButton{
+    padding: 10px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+#shareCode {
+    margin-bottom: 10px;
+}
+#tileInfo{
+    margin-top: 10px;
+    font-size: 0.60rem;
+    color: #397e7b;
+}
+.turn {
+    background-color: #00373d;
+}
